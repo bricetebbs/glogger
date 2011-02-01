@@ -1,0 +1,11 @@
+# source this
+agvtool bump -all
+svn commit -m "Pushing Version"
+cd build/Distribution-iphoneos
+
+zip -r glogger.app.zip glogger.app
+mv glogger.app.zip ../../
+cd ..
+cd ..
+scp glogger.app.zip nikto@www.northnitch.com:/home/nikto/sites/northnitch.com/public_html/distro/
+scp NN_Ad_Hoc_Profile.mobileprovision nikto@www.northnitch.com:/home/nikto/sites/northnitch.com/public_html/distro/
