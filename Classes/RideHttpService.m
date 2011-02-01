@@ -105,8 +105,6 @@
                                                                   recordingObject.label, @"ride_name",
                                                                   nil]
                                      andTag: tag];
-    
-    
 }
 
 
