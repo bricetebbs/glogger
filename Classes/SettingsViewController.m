@@ -57,7 +57,7 @@ double MAX_MIN_SPEED = 4.4704;
     minSpeed.labelScale = 2.23693629;
     minSpeed.labelFormat = @"%4.2fMph";
     
-    enablePing.pref_delegate = self;
+    enablePing.dv_changed_delegate = self;
 }
 
 
