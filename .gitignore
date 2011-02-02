@@ -1,2 +1,6 @@
 build/
 *.svn/
+xcuserdata/
+*.pbxuser
+*.perspectivev3
+
