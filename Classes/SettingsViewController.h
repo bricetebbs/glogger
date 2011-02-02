@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "nnLoginSettingsViewController.h"
+
 #import "nnDVBoolUISwitch.h"
 #import "nnDVStringUIText.h"
 #import "nnDVDoubleUISlider.h"
@@ -17,12 +18,18 @@
 #import "nnHTTPService.h"
 
 @interface SettingsViewController : nnLoginSettingsViewController<nnHTTPServiceDelegate,
-                                                                    nnDVBoolUISwitchDelegate> {
-
-    IBOutlet nnDVDoubleUISlider* minSpeed;
-    IBOutlet nnDVBoolUISwitch* enablePing;
-    IBOutlet nnDVBoolUISwitch* enableAutoStop;
-    IBOutlet nnDVStringUIText* serverURL;
+                                                                    nnDVChangedProtocol> {
+     nnDVDoubleUISlider* minSpeed;
+     nnDVBoolUISwitch* enablePing;
+     nnDVBoolUISwitch* enableAutoStop;
+     nnDVStringUIText* serverURL;
 }
+
+
+@property (nonatomic, retain) IBOutlet nnDVDoubleUISlider* minSpeed;
+@property (nonatomic, retain) IBOutlet nnDVBoolUISwitch* enablePing;
+@property (nonatomic, retain) IBOutlet nnDVBoolUISwitch* enableAutoStop;
+@property (nonatomic, retain) IBOutlet nnDVStringUIText* serverURL;
+
 
 @end

@@ -37,6 +37,10 @@
 		427F4E511208911200153B28 /* indicator_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 427F4E4E1208911200153B28 /* indicator_yellow.png */; };
 		427F4E521208911200153B28 /* indicator_bad.png in Resources */ = {isa = PBXBuildFile; fileRef = 427F4E4F1208911200153B28 /* indicator_bad.png */; };
 		427F4E531208911200153B28 /* indicator_good.png in Resources */ = {isa = PBXBuildFile; fileRef = 427F4E501208911200153B28 /* indicator_good.png */; };
+		4281D2E212F8BA11003527AA /* nnDVDoubleUISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4281D2DC12F8BA11003527AA /* nnDVDoubleUISlider.m */; };
+		4281D2E312F8BA11003527AA /* nnDVBoolUISwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4281D2DE12F8BA11003527AA /* nnDVBoolUISwitch.m */; };
+		4281D2E412F8BA11003527AA /* nnDVStringUIText.m in Sources */ = {isa = PBXBuildFile; fileRef = 4281D2E012F8BA11003527AA /* nnDVStringUIText.m */; };
+		42A0DE7A12F9E9F600EDDCB3 /* nnDV.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A0DE7912F9E9F600EDDCB3 /* nnDV.m */; };
 		42AE81D912132E210052A86C /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE81CE12132E210052A86C /* SBJsonWriter.m */; };
 		42AE81DA12132E210052A86C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE81D012132E210052A86C /* SBJsonParser.m */; };
 		42AE81DB12132E210052A86C /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE81D212132E210052A86C /* SBJsonBase.m */; };
@@ -46,9 +50,6 @@
 		42AE84B512159B1C0052A86C /* nnLoginSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE84B412159B1C0052A86C /* nnLoginSettingsViewController.m */; };
 		42AE84B812159B710052A86C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE84B712159B710052A86C /* SettingsViewController.m */; };
 		42AE875412160A7E0052A86C /* ping.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 42AE875312160A7E0052A86C /* ping.aiff */; };
-		42AE878D121983100052A86C /* nnDVBoolUISwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE878C121983100052A86C /* nnDVBoolUISwitch.m */; };
-		42C0145F12F4D7A600C0F7C8 /* nnDVStringUIText.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C0145E12F4D7A600C0F7C8 /* nnDVStringUIText.m */; };
-		42C0146212F5A9BE00C0F7C8 /* nnDVDoubleUISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C0146112F5A9BE00C0F7C8 /* nnDVDoubleUISlider.m */; };
 		42E12158129978FA00FD11F9 /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42E12157129978FA00FD11F9 /* TODO.txt */; };
 		42F14709121D649C0039EDE0 /* nnHTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F14707121D649C0039EDE0 /* nnHTTPService.m */; };
 		42F14710121D65AA0039EDE0 /* RideHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F1470F121D65AA0039EDE0 /* RideHttpService.m */; };
@@ -99,24 +100,24 @@
 		28A0AAE50D9B0CCF005BE974 /* glogger_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glogger_Prefix.pch; sourceTree = "<group>"; };
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4238139712130E8300C19B17 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = "../../../thirdParty/asi-http-request/Classes/ASIProgressDelegate.h"; sourceTree = SOURCE_ROOT; };
-		4238139812130E8300C19B17 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = "../../../thirdParty/asi-http-request/Classes/ASINetworkQueue.m"; sourceTree = SOURCE_ROOT; };
-		4238139912130E8300C19B17 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = "../../../thirdParty/asi-http-request/Classes/ASINetworkQueue.h"; sourceTree = SOURCE_ROOT; };
-		4238139A12130E8300C19B17 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = "../../../thirdParty/asi-http-request/Classes/ASIInputStream.m"; sourceTree = SOURCE_ROOT; };
-		4238139B12130E8300C19B17 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = "../../../thirdParty/asi-http-request/Classes/ASIInputStream.h"; sourceTree = SOURCE_ROOT; };
-		4238139C12130E8300C19B17 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = "../../../thirdParty/asi-http-request/Classes/ASIHTTPRequestDelegate.h"; sourceTree = SOURCE_ROOT; };
-		4238139D12130E8300C19B17 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = "../../../thirdParty/asi-http-request/Classes/ASIHTTPRequestConfig.h"; sourceTree = SOURCE_ROOT; };
-		4238139E12130E8300C19B17 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = "../../../thirdParty/asi-http-request/Classes/ASIHTTPRequest.m"; sourceTree = SOURCE_ROOT; };
-		4238139F12130E8300C19B17 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = "../../../thirdParty/asi-http-request/Classes/ASIHTTPRequest.h"; sourceTree = SOURCE_ROOT; };
-		423813A012130E8300C19B17 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = "../../../thirdParty/asi-http-request/Classes/ASIFormDataRequest.m"; sourceTree = SOURCE_ROOT; };
-		423813A112130E8300C19B17 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = "../../../thirdParty/asi-http-request/Classes/ASIFormDataRequest.h"; sourceTree = SOURCE_ROOT; };
-		423813A212130E8300C19B17 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = "../../../thirdParty/asi-http-request/Classes/ASIDownloadCache.m"; sourceTree = SOURCE_ROOT; };
-		423813A312130E8300C19B17 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = "../../../thirdParty/asi-http-request/Classes/ASIDownloadCache.h"; sourceTree = SOURCE_ROOT; };
-		423813A412130E8300C19B17 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = "../../../thirdParty/asi-http-request/Classes/ASICacheDelegate.h"; sourceTree = SOURCE_ROOT; };
-		423813A512130E8300C19B17 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = "../../../thirdParty/asi-http-request/Classes/ASIAuthenticationDialog.m"; sourceTree = SOURCE_ROOT; };
-		423813A612130E8300C19B17 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = "../../../thirdParty/asi-http-request/Classes/ASIAuthenticationDialog.h"; sourceTree = SOURCE_ROOT; };
-		423813B012130ECA00C19B17 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "../../../thirdParty/asi-http-request/External/Reachability/Reachability.m"; sourceTree = SOURCE_ROOT; };
-		423813B112130ECA00C19B17 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../../../thirdParty/asi-http-request/External/Reachability/Reachability.h"; sourceTree = SOURCE_ROOT; };
+		4238139712130E8300C19B17 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = "../../thirdParty/asi-http-request/Classes/ASIProgressDelegate.h"; sourceTree = SOURCE_ROOT; };
+		4238139812130E8300C19B17 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = "../../thirdParty/asi-http-request/Classes/ASINetworkQueue.m"; sourceTree = SOURCE_ROOT; };
+		4238139912130E8300C19B17 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = "../../thirdParty/asi-http-request/Classes/ASINetworkQueue.h"; sourceTree = SOURCE_ROOT; };
+		4238139A12130E8300C19B17 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = "../../thirdParty/asi-http-request/Classes/ASIInputStream.m"; sourceTree = SOURCE_ROOT; };
+		4238139B12130E8300C19B17 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = "../../thirdParty/asi-http-request/Classes/ASIInputStream.h"; sourceTree = SOURCE_ROOT; };
+		4238139C12130E8300C19B17 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = "../../thirdParty/asi-http-request/Classes/ASIHTTPRequestDelegate.h"; sourceTree = SOURCE_ROOT; };
+		4238139D12130E8300C19B17 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = "../../thirdParty/asi-http-request/Classes/ASIHTTPRequestConfig.h"; sourceTree = SOURCE_ROOT; };
+		4238139E12130E8300C19B17 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = "../../thirdParty/asi-http-request/Classes/ASIHTTPRequest.m"; sourceTree = SOURCE_ROOT; };
+		4238139F12130E8300C19B17 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = "../../thirdParty/asi-http-request/Classes/ASIHTTPRequest.h"; sourceTree = SOURCE_ROOT; };
+		423813A012130E8300C19B17 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = "../../thirdParty/asi-http-request/Classes/ASIFormDataRequest.m"; sourceTree = SOURCE_ROOT; };
+		423813A112130E8300C19B17 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = "../../thirdParty/asi-http-request/Classes/ASIFormDataRequest.h"; sourceTree = SOURCE_ROOT; };
+		423813A212130E8300C19B17 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = "../../thirdParty/asi-http-request/Classes/ASIDownloadCache.m"; sourceTree = SOURCE_ROOT; };
+		423813A312130E8300C19B17 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = "../../thirdParty/asi-http-request/Classes/ASIDownloadCache.h"; sourceTree = SOURCE_ROOT; };
+		423813A412130E8300C19B17 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = "../../thirdParty/asi-http-request/Classes/ASICacheDelegate.h"; sourceTree = SOURCE_ROOT; };
+		423813A512130E8300C19B17 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = "../../thirdParty/asi-http-request/Classes/ASIAuthenticationDialog.m"; sourceTree = SOURCE_ROOT; };
+		423813A612130E8300C19B17 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = "../../thirdParty/asi-http-request/Classes/ASIAuthenticationDialog.h"; sourceTree = SOURCE_ROOT; };
+		423813B012130ECA00C19B17 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "../../thirdParty/asi-http-request/External/Reachability/Reachability.m"; sourceTree = SOURCE_ROOT; };
+		423813B112130ECA00C19B17 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../../thirdParty/asi-http-request/External/Reachability/Reachability.h"; sourceTree = SOURCE_ROOT; };
 		423813B512130EEC00C19B17 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		423813B712130EEC00C19B17 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		423813BF12130F2600C19B17 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
@@ -136,17 +137,25 @@
 		427F4E4F1208911200153B28 /* indicator_bad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = indicator_bad.png; path = ../nnLib/media/indicator_bad.png; sourceTree = SOURCE_ROOT; };
 		427F4E501208911200153B28 /* indicator_good.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = indicator_good.png; path = ../nnLib/media/indicator_good.png; sourceTree = SOURCE_ROOT; };
 		427F4EBC1208CC3100153B28 /* glogger 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "glogger 5.xcdatamodel"; sourceTree = "<group>"; };
-		42AE81CE12132E210052A86C /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = "../../../thirdParty/json-framework/Classes/SBJsonWriter.m"; sourceTree = SOURCE_ROOT; };
-		42AE81CF12132E210052A86C /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = "../../../thirdParty/json-framework/Classes/SBJsonWriter.h"; sourceTree = SOURCE_ROOT; };
-		42AE81D012132E210052A86C /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = "../../../thirdParty/json-framework/Classes/SBJsonParser.m"; sourceTree = SOURCE_ROOT; };
-		42AE81D112132E210052A86C /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = "../../../thirdParty/json-framework/Classes/SBJsonParser.h"; sourceTree = SOURCE_ROOT; };
-		42AE81D212132E210052A86C /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonBase.m; path = "../../../thirdParty/json-framework/Classes/SBJsonBase.m"; sourceTree = SOURCE_ROOT; };
-		42AE81D312132E210052A86C /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonBase.h; path = "../../../thirdParty/json-framework/Classes/SBJsonBase.h"; sourceTree = SOURCE_ROOT; };
-		42AE81D412132E210052A86C /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SBJSON.m"; path = "../../../thirdParty/json-framework/Classes/NSString+SBJSON.m"; sourceTree = SOURCE_ROOT; };
-		42AE81D512132E210052A86C /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SBJSON.h"; path = "../../../thirdParty/json-framework/Classes/NSString+SBJSON.h"; sourceTree = SOURCE_ROOT; };
-		42AE81D612132E210052A86C /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJSON.m"; path = "../../../thirdParty/json-framework/Classes/NSObject+SBJSON.m"; sourceTree = SOURCE_ROOT; };
-		42AE81D712132E210052A86C /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJSON.h"; path = "../../../thirdParty/json-framework/Classes/NSObject+SBJSON.h"; sourceTree = SOURCE_ROOT; };
-		42AE81D812132E210052A86C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = "../../../thirdParty/json-framework/Classes/JSON.h"; sourceTree = SOURCE_ROOT; };
+		4281D2DC12F8BA11003527AA /* nnDVDoubleUISlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = nnDVDoubleUISlider.m; path = ../nnLib/nnDVDoubleUISlider.m; sourceTree = "<group>"; };
+		4281D2DD12F8BA11003527AA /* nnDVDoubleUISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nnDVDoubleUISlider.h; path = ../nnLib/nnDVDoubleUISlider.h; sourceTree = "<group>"; };
+		4281D2DE12F8BA11003527AA /* nnDVBoolUISwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = nnDVBoolUISwitch.m; path = ../nnLib/nnDVBoolUISwitch.m; sourceTree = "<group>"; };
+		4281D2DF12F8BA11003527AA /* nnDVBoolUISwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nnDVBoolUISwitch.h; path = ../nnLib/nnDVBoolUISwitch.h; sourceTree = "<group>"; };
+		4281D2E012F8BA11003527AA /* nnDVStringUIText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = nnDVStringUIText.m; path = ../nnLib/nnDVStringUIText.m; sourceTree = "<group>"; };
+		4281D2E112F8BA11003527AA /* nnDVStringUIText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nnDVStringUIText.h; path = ../nnLib/nnDVStringUIText.h; sourceTree = "<group>"; };
+		42A0DE7512F9468A00EDDCB3 /* nnDV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nnDV.h; path = ../nnLib/nnDV.h; sourceTree = "<group>"; };
+		42A0DE7912F9E9F600EDDCB3 /* nnDV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = nnDV.m; path = ../nnLib/nnDV.m; sourceTree = "<group>"; };
+		42AE81CE12132E210052A86C /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = "../../thirdParty/json-framework/Classes/SBJsonWriter.m"; sourceTree = SOURCE_ROOT; };
+		42AE81CF12132E210052A86C /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = "../../thirdParty/json-framework/Classes/SBJsonWriter.h"; sourceTree = SOURCE_ROOT; };
+		42AE81D012132E210052A86C /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = "../../thirdParty/json-framework/Classes/SBJsonParser.m"; sourceTree = SOURCE_ROOT; };
+		42AE81D112132E210052A86C /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = "../../thirdParty/json-framework/Classes/SBJsonParser.h"; sourceTree = SOURCE_ROOT; };
+		42AE81D212132E210052A86C /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonBase.m; path = "../../thirdParty/json-framework/Classes/SBJsonBase.m"; sourceTree = SOURCE_ROOT; };
+		42AE81D312132E210052A86C /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonBase.h; path = "../../thirdParty/json-framework/Classes/SBJsonBase.h"; sourceTree = SOURCE_ROOT; };
+		42AE81D412132E210052A86C /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SBJSON.m"; path = "../../thirdParty/json-framework/Classes/NSString+SBJSON.m"; sourceTree = SOURCE_ROOT; };
+		42AE81D512132E210052A86C /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SBJSON.h"; path = "../../thirdParty/json-framework/Classes/NSString+SBJSON.h"; sourceTree = SOURCE_ROOT; };
+		42AE81D612132E210052A86C /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJSON.m"; path = "../../thirdParty/json-framework/Classes/NSObject+SBJSON.m"; sourceTree = SOURCE_ROOT; };
+		42AE81D712132E210052A86C /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJSON.h"; path = "../../thirdParty/json-framework/Classes/NSObject+SBJSON.h"; sourceTree = SOURCE_ROOT; };
+		42AE81D812132E210052A86C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = "../../thirdParty/json-framework/Classes/JSON.h"; sourceTree = SOURCE_ROOT; };
 		42AE83AD1214928C0052A86C /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = Classes/SettingsViewController.xib; sourceTree = "<group>"; };
 		42AE84B312159B1C0052A86C /* nnLoginSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = nnLoginSettingsViewController.h; path = ../nnLib/nnLoginSettingsViewController.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		42AE84B412159B1C0052A86C /* nnLoginSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = nnLoginSettingsViewController.m; path = ../nnLib/nnLoginSettingsViewController.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -154,12 +163,6 @@
 		42AE84B712159B710052A86C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SettingsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		42AE86121215F45E0052A86C /* glogger 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "glogger 6.xcdatamodel"; sourceTree = "<group>"; };
 		42AE875312160A7E0052A86C /* ping.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = ping.aiff; path = media/ping.aiff; sourceTree = "<group>"; };
-		42AE878B121983100052A86C /* nnDVBoolUISwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lineEnding = 0; path = nnDVBoolUISwitch.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		42AE878C121983100052A86C /* nnDVBoolUISwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = nnDVBoolUISwitch.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		42C0145D12F4D7A600C0F7C8 /* nnDVStringUIText.h */ = {isa = PBXFileReference; fileEncoding = 4; lineEnding = 0; path = nnDVStringUIText.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		42C0145E12F4D7A600C0F7C8 /* nnDVStringUIText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = nnDVStringUIText.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		42C0146012F5A9BE00C0F7C8 /* nnDVDoubleUISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lineEnding = 0; path = nnDVDoubleUISlider.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		42C0146112F5A9BE00C0F7C8 /* nnDVDoubleUISlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = nnDVDoubleUISlider.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		42E12157129978FA00FD11F9 /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
 		42F14707121D649C0039EDE0 /* nnHTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = nnHTTPService.m; path = ../nnLib/nnHTTPService.m; sourceTree = SOURCE_ROOT; };
 		42F14708121D649C0039EDE0 /* nnHTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nnHTTPService.h; path = ../nnLib/nnHTTPService.h; sourceTree = SOURCE_ROOT; };
@@ -182,7 +185,6 @@
 		42F57F6B11FF901E00D863E6 /* northNitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = northNitch.m; path = ../nnLib/northNitch.m; sourceTree = SOURCE_ROOT; };
 		42F57F6F11FF904200D863E6 /* nnPreferenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = nnPreferenceManager.h; path = ../nnLib/nnPreferenceManager.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		42F57F7011FF904200D863E6 /* nnPreferenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = nnPreferenceManager.m; path = ../nnLib/nnPreferenceManager.m; sourceTree = SOURCE_ROOT; };
-		42F57F7111FF904200D863E6 /* nnDVStoreProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nnDVStoreProtocol.h; path = ../nnLib/nnDVStoreProtocol.h; sourceTree = SOURCE_ROOT; };
 		42F5810012007CF900D863E6 /* Glogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Glogger.h; sourceTree = "<group>"; };
 		42F5810112007CF900D863E6 /* Glogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Glogger.m; sourceTree = "<group>"; };
 		42F58139120085B600D863E6 /* nnCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nnCoreDataTableViewController.h; path = ../nnLib/nnCoreDataTableViewController.h; sourceTree = SOURCE_ROOT; };
@@ -423,7 +425,15 @@
 		42F57F6511FF8FCD00D863E6 /* nnLib */ = {
 			isa = PBXGroup;
 			children = (
+				42A0DE7912F9E9F600EDDCB3 /* nnDV.m */,
+				42A0DE7512F9468A00EDDCB3 /* nnDV.h */,
 				427F4E4D120890FD00153B28 /* media */,
+				4281D2DC12F8BA11003527AA /* nnDVDoubleUISlider.m */,
+				4281D2DD12F8BA11003527AA /* nnDVDoubleUISlider.h */,
+				4281D2DE12F8BA11003527AA /* nnDVBoolUISwitch.m */,
+				4281D2DF12F8BA11003527AA /* nnDVBoolUISwitch.h */,
+				4281D2E012F8BA11003527AA /* nnDVStringUIText.m */,
+				4281D2E112F8BA11003527AA /* nnDVStringUIText.h */,
 				42F14F8C1221A8890039EDE0 /* nnSmoother.h */,
 				42F14F8D1221A8890039EDE0 /* nnSmoother.m */,
 				42F14707121D649C0039EDE0 /* nnHTTPService.m */,
@@ -448,15 +458,8 @@
 				42F5813A120085B600D863E6 /* nnCoreDataTableViewController.m */,
 				42F57F6F11FF904200D863E6 /* nnPreferenceManager.h */,
 				42F57F7011FF904200D863E6 /* nnPreferenceManager.m */,
-				42F57F7111FF904200D863E6 /* nnDVStoreProtocol.h */,
 				42F57F6A11FF901E00D863E6 /* northNitch.h */,
 				42F57F6B11FF901E00D863E6 /* northNitch.m */,
-				42AE878B121983100052A86C /* nnDVBoolUISwitch.h */,
-				42AE878C121983100052A86C /* nnDVBoolUISwitch.m */,
-				42C0145D12F4D7A600C0F7C8 /* nnDVStringUIText.h */,
-				42C0145E12F4D7A600C0F7C8 /* nnDVStringUIText.m */,
-				42C0146012F5A9BE00C0F7C8 /* nnDVDoubleUISlider.h */,
-				42C0146112F5A9BE00C0F7C8 /* nnDVDoubleUISlider.m */,
 			);
 			name = nnLib;
 			sourceTree = "<group>";
@@ -591,7 +594,6 @@
 				42AE81DD12132E210052A86C /* NSObject+SBJSON.m in Sources */,
 				42AE84B512159B1C0052A86C /* nnLoginSettingsViewController.m in Sources */,
 				42AE84B812159B710052A86C /* SettingsViewController.m in Sources */,
-				42AE878D121983100052A86C /* nnDVBoolUISwitch.m in Sources */,
 				42F14709121D649C0039EDE0 /* nnHTTPService.m in Sources */,
 				42F14710121D65AA0039EDE0 /* RideHttpService.m in Sources */,
 				42F149E2121F39610039EDE0 /* RideListController.m in Sources */,
@@ -599,8 +601,10 @@
 				42F14DEB121FA03D0039EDE0 /* LiveRecordingViewController.m in Sources */,
 				42F14F8E1221A8890039EDE0 /* nnSmoother.m in Sources */,
 				42F1532E12255A620039EDE0 /* RecordingManager.m in Sources */,
-				42C0145F12F4D7A600C0F7C8 /* nnDVStringUIText.m in Sources */,
-				42C0146212F5A9BE00C0F7C8 /* nnDVDoubleUISlider.m in Sources */,
+				4281D2E212F8BA11003527AA /* nnDVDoubleUISlider.m in Sources */,
+				4281D2E312F8BA11003527AA /* nnDVBoolUISwitch.m in Sources */,
+				4281D2E412F8BA11003527AA /* nnDVStringUIText.m in Sources */,
+				42A0DE7A12F9E9F600EDDCB3 /* nnDV.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

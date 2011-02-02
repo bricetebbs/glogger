@@ -108,9 +108,7 @@
 -(IBAction)openSettings
 {
     SettingsViewController *controller=  [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
-    gloggerAppDelegate *adel = (gloggerAppDelegate*)[UIApplication sharedApplication].delegate;
     
-    [controller setupPreferences: adel.preferenceManager usernameKey: PREF_USERNAME passwordKey: PREF_PASSWORD];
     controller.delegate = self;
     [self.navigationController presentModalViewController:controller animated:YES];
     [controller release];    

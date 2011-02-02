@@ -15,9 +15,17 @@
 double MIN_MIN_SPEED = 0;
 double MAX_MIN_SPEED = 4.4704;
 
+@synthesize enablePing;
+@synthesize enableAutoStop;
+@synthesize serverURL;
+@synthesize minSpeed;
 
 -(void)dealloc
 {
+    [enablePing release];
+    [enableAutoStop release];
+    [serverURL release];
+    [minSpeed release];
     [super dealloc];
 }
 
@@ -33,7 +41,7 @@ double MAX_MIN_SPEED = 4.4704;
 }
 
 
-// Override this in subclass
+// Overridden from superclass
 -(void)testLogin
 {
     [super testLogin];
@@ -44,27 +52,48 @@ double MAX_MIN_SPEED = 4.4704;
     [service checkAuthenticationCredentials: AUTHENTICATE_URL username: username.text password:password.text];
 }
 
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [enablePing setup: PREF_PING_ENABLE withHandler:preferenceManager];
-    [enableAutoStop setup: PREF_AUTOSTOP_ENABLE withHandler: preferenceManager];
-    [serverURL setup: PREF_SERVER_URL_STRING withHandler: preferenceManager];
-    [minSpeed setup: PREF_MIN_SPEED withHandler: preferenceManager];
+-(void)setupPreferences:(id<nnDVStoreProtocol>)pm usernameKey:(NSString *)user passwordKey:(NSString *)pass
+{
     
-    minSpeed.minimumValue = MIN_MIN_SPEED;
-    minSpeed.maximumValue = MAX_MIN_SPEED;
-    minSpeed.labelScale = 2.23693629;
-    minSpeed.labelFormat = @"%4.2fMph";
     
-    enablePing.dv_changed_delegate = self;
+    [super setupPreferences: pm usernameKey:user passwordKey:pass];
+    
+    self.enablePing.dvInfo = [[[nnDVBool alloc] init: PREF_PING_ENABLE withHandler: preferenceManager] autorelease];
+    self.enableAutoStop.dvInfo = [[[nnDVBool alloc] init: PREF_AUTOSTOP_ENABLE withHandler: preferenceManager] autorelease];
+    self.serverURL.dvInfo = [[[nnDVString alloc] init: PREF_SERVER_URL_STRING withHandler: preferenceManager] autorelease];
+    self.minSpeed.dvInfo = [[[nnDVDouble alloc] init: PREF_MIN_SPEED withHandler: preferenceManager] autorelease];
+    
+    [self.enablePing setup];
+    [self.enableAutoStop setup];
+    
+    [self.serverURL setup];
+    [self.minSpeed setup];
+    
+    self.minSpeed.minimumValue = MIN_MIN_SPEED;
+    self.minSpeed.maximumValue = MAX_MIN_SPEED;
+    self.minSpeed.labelScale = 2.23693629;
+    self.minSpeed.labelFormat = @"%4.2fMph";
+    
+    self.enablePing.dvInfo.dvChangedDelegate = self;
 }
 
 
--(void)valueUpdated: (nnDVBoolUISwitch*)preference newValue: (BOOL)value
+- (void)viewDidLoad {
+
+    [super viewDidLoad];
+    
+    gloggerAppDelegate *adel = (gloggerAppDelegate*)[UIApplication sharedApplication].delegate;
+    
+    [self setupPreferences: adel.preferenceManager usernameKey: PREF_USERNAME passwordKey: PREF_PASSWORD];
+
+}
+
+
+-(void)valueUpdated: (nnDVBase*) element
 {
-    if(preference == enablePing)
+    if ([element.dvVarName isEqualToString: PREF_PING_ENABLE])
     {
+        BOOL value = [element.dvStoreHandler boolForKey: PREF_PING_ENABLE];
         gloggerAppDelegate *adel = (gloggerAppDelegate*)[UIApplication sharedApplication].delegate;
         
         if (value == YES) 
@@ -77,7 +106,6 @@ double MAX_MIN_SPEED = 4.4704;
         }
     }
 }
-
 
 -(void)storeSettings
 {

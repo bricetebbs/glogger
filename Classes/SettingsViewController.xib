@@ -88,6 +88,11 @@
 								<int key="NSID">2</int>
 							</object>
 						</object>
+						<object class="NSFont" key="IBUIFont" id="936524925">
+							<string key="NSName">Helvetica</string>
+							<double key="NSSize">12</double>
+							<int key="NSfFlags">16</int>
+						</object>
 						<bool key="IBUIAdjustsFontSizeToFit">YES</bool>
 						<float key="IBUIMinimumFontSize">17</float>
 						<object class="IBUITextInputTraits" key="IBUITextInputTraits">
@@ -423,11 +428,7 @@
 							<bytes key="NSWhite">MAA</bytes>
 							<reference key="NSCustomColorSpace" ref="536727696"/>
 						</object>
-						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">12</double>
-							<int key="NSfFlags">16</int>
-						</object>
+						<reference key="IBUIFont" ref="936524925"/>
 						<bool key="IBUIAdjustsFontSizeToFit">YES</bool>
 						<float key="IBUIMinimumFontSize">17</float>
 						<object class="IBUITextInputTraits" key="IBUITextInputTraits">
@@ -460,22 +461,6 @@
 						<reference key="destination" ref="191373211"/>
 					</object>
 					<int key="connectionID">3</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">password</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="718457350"/>
-					</object>
-					<int key="connectionID">9</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">username</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="1025623403"/>
-					</object>
-					<int key="connectionID">10</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -554,30 +539,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">enablePing</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="645485583"/>
-					</object>
-					<int key="connectionID">35</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">enableAutoStop</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="795487469"/>
-					</object>
-					<int key="connectionID">38</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">serverURL</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="1069524362"/>
-					</object>
-					<int key="connectionID">41</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
 						<reference key="source" ref="1069524362"/>
 						<reference key="destination" ref="372490531"/>
@@ -586,11 +547,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">sliderTextLabel</string>
+						<string key="label">dvSliderTextLabel</string>
 						<reference key="source" ref="165836442"/>
 						<reference key="destination" ref="600027395"/>
 					</object>
-					<int key="connectionID">43</int>
+					<int key="connectionID">46</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -598,7 +559,47 @@
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="165836442"/>
 					</object>
-					<int key="connectionID">44</int>
+					<int key="connectionID">47</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">enableAutoStop</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="795487469"/>
+					</object>
+					<int key="connectionID">48</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">enablePing</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="645485583"/>
+					</object>
+					<int key="connectionID">49</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">serverURL</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="1069524362"/>
+					</object>
+					<int key="connectionID">50</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">password</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="718457350"/>
+					</object>
+					<int key="connectionID">51</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">username</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="1025623403"/>
+					</object>
+					<int key="connectionID">52</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -619,7 +620,6 @@
 							<reference ref="1027182611"/>
 							<reference ref="512235594"/>
 							<reference ref="939480339"/>
-							<reference ref="795487469"/>
 							<reference ref="168513575"/>
 							<reference ref="597514753"/>
 							<reference ref="201368644"/>
@@ -628,11 +628,12 @@
 							<reference ref="441185431"/>
 							<reference ref="287352663"/>
 							<reference ref="508289399"/>
-							<reference ref="1069524362"/>
-							<reference ref="718457350"/>
-							<reference ref="600027395"/>
 							<reference ref="165836442"/>
 							<reference ref="645485583"/>
+							<reference ref="600027395"/>
+							<reference ref="795487469"/>
+							<reference ref="1069524362"/>
+							<reference ref="718457350"/>
 							<reference ref="1025623403"/>
 						</object>
 						<reference key="parent" ref="0"/>
@@ -775,8 +776,10 @@
 					<string>39.IBPluginDependency</string>
 					<string>4.IBPluginDependency</string>
 					<string>40.IBPluginDependency</string>
+					<string>5.CustomClassName</string>
 					<string>5.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
+					<string>7.CustomClassName</string>
 					<string>7.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
@@ -805,8 +808,10 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>nnDVStringUIText</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>nnDVStringUIText</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
 			</object>
@@ -822,7 +827,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">44</int>
+			<int key="maxID">52</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -893,13 +898,13 @@
 					<string key="className">nnDVDoubleUISlider</string>
 					<string key="superclassName">UISlider</string>
 					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">sliderTextLabel</string>
+						<string key="NS.key.0">dvSliderTextLabel</string>
 						<string key="NS.object.0">UILabel</string>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">sliderTextLabel</string>
+						<string key="NS.key.0">dvSliderTextLabel</string>
 						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">sliderTextLabel</string>
+							<string key="name">dvSliderTextLabel</string>
 							<string key="candidateClassName">UILabel</string>
 						</object>
 					</object>
@@ -973,9 +978,9 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UIButton</string>
 							<string>UIButton</string>
-							<string>UITextField</string>
+							<string>nnDVStringUIText</string>
 							<string>UIActivityIndicatorView</string>
-							<string>UITextField</string>
+							<string>nnDVStringUIText</string>
 							<string>UILabel</string>
 						</object>
 					</object>
@@ -1002,7 +1007,7 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">password</string>
-								<string key="candidateClassName">UITextField</string>
+								<string key="candidateClassName">nnDVStringUIText</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">spinner</string>
@@ -1010,7 +1015,7 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">username</string>
-								<string key="candidateClassName">UITextField</string>
+								<string key="candidateClassName">nnDVStringUIText</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">version</string>

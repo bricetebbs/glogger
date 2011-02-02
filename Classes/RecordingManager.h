@@ -14,7 +14,7 @@
 #import "nnShortSound.h"
 #import "nnSmoother.h"
 #import "nnCoreDataManager.h"
-#import "nnDVStoreProtocol.h"
+#import "nnDV.h"
 #import "RideHttpService.h"
 #import "Recording.h"
 
