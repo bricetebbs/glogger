@@ -220,9 +220,11 @@ NSInteger INSET_PIXELS = 170;
     
     // Compensate for the scrolling we have done.
     CGContextTranslateCTM(context, scrollOffset.x, scrollOffset.y);
-        
+    
     
     CGContextSaveGState(context);
+    
+    
     CGContextSetLineWidth(context, 3.0);
     CGContextSetLineCap(context, kCGLineCapRound);
     CGContextSetLineJoin(context, kCGLineJoinRound);
