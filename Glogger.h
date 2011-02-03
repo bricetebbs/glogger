@@ -9,48 +9,39 @@
 #import <Foundation/Foundation.h>
 
 
-NSString* PREF_NOTIFY_ENABLE; 
-NSString* PREF_RANDOMIZE_TIMES;
-NSString* PREF_NEXT_SAMPLE_TIME;
-NSString* PREF_SHOW_LIST_ON_START;
+extern NSString* const PREF_NOTIFY_ENABLE; 
+extern NSString* const PREF_RANDOMIZE_TIMES;
+extern NSString* const PREF_NEXT_SAMPLE_TIME;
+extern NSString* const PREF_SHOW_LIST_ON_START;
 
 
-NSString* PREF_SPREADSHEET_WORKSHEET_FEED;
-NSString* PREF_SPREADSHEET_TABLE_FEED;
-NSString* PREF_TABLE_RECORD_FEED;
-NSString* PREF_DOCLIST_UPLOAD_FEED;
+
+extern NSString* const PREF_USERNAME;
+extern NSString* const PREF_PASSWORD;
+extern NSString* const PREF_MIN_SPEED;
+extern NSString* const PREF_PING_ENABLE;
+extern NSString* const PREF_AUTOSTOP_ENABLE;
+extern NSString* const PREF_SERVER_URL_STRING;
 
 
-NSString* DEFAULT_WORKSHEET_NAME;
-NSString* DEFAULT_SPREADSHEET_NAME;
-NSString* DEFAULT_TABLE_NAME;
-
-NSString* PREF_USERNAME;
-NSString* PREF_PASSWORD;
-NSString* PREF_MIN_SPEED;
-NSString* PREF_PING_ENABLE;
-NSString* PREF_AUTOSTOP_ENABLE;
-NSString* PREF_SERVER_URL_STRING;
+extern NSString* const APP_NAME;
 
 
-NSString* APP_NAME;
+extern NSString* const SERVER_STRING;
+extern NSString* const AUTHENTICATE_URL;
+extern NSString* const UPLOAD_URL;
+extern NSString* const PING_URL;
+extern NSString* const MAP_URL_TEMPLATE;
 
 
-NSString* SERVER_STRING;
-NSString* AUTHENTICATE_URL;
-NSString* UPLOAD_URL;
-NSString* PING_URL;
-NSString* MAP_URL_TEMPLATE;
+extern NSString* const REQUEST_TAG_PING_AUTH;
+extern NSString* const REQUEST_TAG_PING;
 
+extern NSString* const REQUEST_TAG_UPLOAD_AUTH;
+extern NSString* const REQUEST_TAG_UPLOAD;
+extern NSString* const REQUEST_TAG_LAST_UPLOAD;
 
-NSString* REQUEST_TAG_PING_AUTH;
-NSString* REQUEST_TAG_PING;
-
-NSString* REQUEST_TAG_UPLOAD_AUTH;
-NSString* REQUEST_TAG_UPLOAD;
-NSString* REQUEST_TAG_LAST_UPLOAD;
-
-NSString* REQUEST_TAG_AUTH_TEST;
+extern NSString* const REQUEST_TAG_AUTH_TEST;
 
 
 #define LOG_TO_GDOC 1
