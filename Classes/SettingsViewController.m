@@ -54,8 +54,6 @@ double MAX_MIN_SPEED = 4.4704;
 
 -(void)setupPreferences:(id<nnDVStoreProtocol>)pm usernameKey:(NSString *)user passwordKey:(NSString *)pass
 {
-    
-    
     [super setupPreferences: pm usernameKey:user passwordKey:pass];
     
     self.enablePing.dvInfo = [[[nnDVBool alloc] init: PREF_PING_ENABLE withHandler: preferenceManager] autorelease];
@@ -63,11 +61,10 @@ double MAX_MIN_SPEED = 4.4704;
     self.serverURL.dvInfo = [[[nnDVString alloc] init: PREF_SERVER_URL_STRING withHandler: preferenceManager] autorelease];
     self.minSpeed.dvInfo = [[[nnDVDouble alloc] init: PREF_MIN_SPEED withHandler: preferenceManager] autorelease];
     
-    [self.enablePing setup];
-    [self.enableAutoStop setup];
-    
-    [self.serverURL setup];
-    [self.minSpeed setup];
+    self.enableAutoStop.dvInfo.dvHoldUpdates = YES;
+    self.enablePing.dvInfo.dvHoldUpdates = YES;
+    self.serverURL.dvInfo.dvHoldUpdates = YES;
+    self.minSpeed.dvInfo.dvHoldUpdates = YES;
     
     self.minSpeed.minimumValue = MIN_MIN_SPEED;
     self.minSpeed.maximumValue = MAX_MIN_SPEED;
