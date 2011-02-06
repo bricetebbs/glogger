@@ -88,9 +88,9 @@ double MAX_MIN_SPEED = 4.4704;
 
 -(void)valueUpdated: (nnDVBase*) element
 {
-    if ([element.dvVarName isEqualToString: PREF_PING_ENABLE])
+    if ([element matchesTag: PREF_PING_ENABLE])
     {
-        BOOL value = [element.dvStoreHandler boolForKey: PREF_PING_ENABLE];
+        BOOL value = [element getBool];
         gloggerAppDelegate *adel = (gloggerAppDelegate*)[UIApplication sharedApplication].delegate;
         
         if (value == YES) 
