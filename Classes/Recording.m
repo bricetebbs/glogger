@@ -38,6 +38,10 @@
 @dynamic time_min;
 @dynamic guid;
 
+-(NSString*)listLabel
+{
+    return self.label;
+}
 
 /*
  *

@@ -189,10 +189,9 @@
 
 // Overrides the one in the nnCoreDataTableViewController class
 
--(NSFetchRequest*)getFetchRequestForController
+-(void)setupFetchRequest: (NSFetchRequest *)fetchRequest
 {
     
-	NSFetchRequest *fetchRequest = [[[NSFetchRequest alloc] init] autorelease];
     
     //
     // Setup the entity we are going to use for this list
@@ -201,8 +200,7 @@
     
     
 	[fetchRequest setEntity:entity];
-	
-    
+
     //
     // Setup how we are going to sort the list
     //
@@ -213,8 +211,7 @@
     
 	[dateDesciptor release];
 	[sortDescriptors release];
-    
-    return fetchRequest;
+
 }
 
 
