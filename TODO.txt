@@ -1,4 +1,8 @@
 Cleanup custom table cell stuff. Maybe don't need one at all.
 Maybe just a generic custom table cell with a display of the value but no delegate/bump function
 
+Switch to touch json?
+
+Add and ADD spot functionality With photos?
+
 

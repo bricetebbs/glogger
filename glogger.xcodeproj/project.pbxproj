@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,13 +24,13 @@
 		423813B212130ECA00C19B17 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 423813B012130ECA00C19B17 /* Reachability.m */; };
 		423813B612130EEC00C19B17 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423813B512130EEC00C19B17 /* CFNetwork.framework */; };
 		423813B812130EEC00C19B17 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423813B712130EEC00C19B17 /* SystemConfiguration.framework */; };
-		423813C012130F2600C19B17 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 423813BF12130F2600C19B17 /* libz.1.2.3.dylib */; };
 		423813C412130FA900C19B17 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423813C312130FA900C19B17 /* MobileCoreServices.framework */; };
 		423CE3241209C7A40024586D /* nnShortSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 423CE3221209C7A40024586D /* nnShortSound.m */; };
 		423CE3421209C8FA0024586D /* record_start.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 423CE3401209C8FA0024586D /* record_start.aiff */; };
 		423CE3431209C8FA0024586D /* record_end.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 423CE3411209C8FA0024586D /* record_end.aiff */; };
 		423CE35F1209C9820024586D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423CE35E1209C9820024586D /* CoreAudio.framework */; };
 		423CE3651209C99B0024586D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423CE3641209C99B0024586D /* AudioToolbox.framework */; };
+		42775BCC1465D0FA004B5256 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42775BCB1465D0FA004B5256 /* libz.1.2.5.dylib */; };
 		427F4A9D1203AE6900153B28 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427F4A9C1203AE6900153B28 /* MessageUI.framework */; };
 		427F4BD41203D98800153B28 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 427F4BD31203D98800153B28 /* icon.png */; };
 		427F4DF112088D6800153B28 /* nnStatusIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F4DEF12088D6800153B28 /* nnStatusIndicator.m */; };
@@ -120,7 +120,6 @@
 		423813B112130ECA00C19B17 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../../thirdParty/asi-http-request/External/Reachability/Reachability.h"; sourceTree = SOURCE_ROOT; };
 		423813B512130EEC00C19B17 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		423813B712130EEC00C19B17 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		423813BF12130F2600C19B17 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		423813C312130FA900C19B17 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		423CE3221209C7A40024586D /* nnShortSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = nnShortSound.m; path = ../nnLib/nnShortSound.m; sourceTree = SOURCE_ROOT; };
 		423CE3231209C7A40024586D /* nnShortSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nnShortSound.h; path = ../nnLib/nnShortSound.h; sourceTree = SOURCE_ROOT; };
@@ -128,6 +127,7 @@
 		423CE3411209C8FA0024586D /* record_end.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = record_end.aiff; path = media/record_end.aiff; sourceTree = "<group>"; };
 		423CE35E1209C9820024586D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		423CE3641209C99B0024586D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		42775BCB1465D0FA004B5256 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		427F4A9C1203AE6900153B28 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		427F4BD31203D98800153B28 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		427F4CE71204CCC600153B28 /* glogger 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "glogger 4.xcdatamodel"; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 		42F14A67121F3B8F0039EDE0 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		42F14A68121F3B8F0039EDE0 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		42F14A69121F3B8F0039EDE0 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StartViewController.xib; path = Classes/StartViewController.xib; sourceTree = "<group>"; };
-		42F14DE8121FA03D0039EDE0 /* LiveRecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = LiveRecordingViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		42F14DE8121FA03D0039EDE0 /* LiveRecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = LiveRecordingViewController.h; path = Classes/LiveRecordingViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		42F14DE9121FA03D0039EDE0 /* LiveRecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveRecordingViewController.m; sourceTree = "<group>"; };
 		42F14DEA121FA03D0039EDE0 /* LiveRecordingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LiveRecordingViewController.xib; path = Classes/LiveRecordingViewController.xib; sourceTree = "<group>"; };
 		42F14F8C1221A8890039EDE0 /* nnSmoother.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nnSmoother.h; path = ../nnLib/nnSmoother.h; sourceTree = SOURCE_ROOT; };
@@ -240,8 +240,8 @@
 				423CE3651209C99B0024586D /* AudioToolbox.framework in Frameworks */,
 				423813B612130EEC00C19B17 /* CFNetwork.framework in Frameworks */,
 				423813B812130EEC00C19B17 /* SystemConfiguration.framework in Frameworks */,
-				423813C012130F2600C19B17 /* libz.1.2.3.dylib in Frameworks */,
 				423813C412130FA900C19B17 /* MobileCoreServices.framework in Frameworks */,
+				42775BCC1465D0FA004B5256 /* libz.1.2.5.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +269,6 @@
 				42F1470F121D65AA0039EDE0 /* RideHttpService.m */,
 				42F14A67121F3B8F0039EDE0 /* StartViewController.h */,
 				42F14A68121F3B8F0039EDE0 /* StartViewController.m */,
-				42F14DE8121FA03D0039EDE0 /* LiveRecordingViewController.h */,
 				42F14DE9121FA03D0039EDE0 /* LiveRecordingViewController.m */,
 				42F1532C12255A620039EDE0 /* RecordingManager.h */,
 				42F1532D12255A620039EDE0 /* RecordingManager.m */,
@@ -306,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				28A0AAE50D9B0CCF005BE974 /* glogger_Prefix.pch */,
+				42F14DE8121FA03D0039EDE0 /* LiveRecordingViewController.h */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				42F5810012007CF900D863E6 /* Glogger.h */,
 				42F5810112007CF900D863E6 /* Glogger.m */,
@@ -335,6 +335,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42775BCB1465D0FA004B5256 /* libz.1.2.5.dylib */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
@@ -346,7 +347,6 @@
 				423CE3641209C99B0024586D /* AudioToolbox.framework */,
 				423813B512130EEC00C19B17 /* CFNetwork.framework */,
 				423813B712130EEC00C19B17 /* SystemConfiguration.framework */,
-				423813BF12130F2600C19B17 /* libz.1.2.3.dylib */,
 				423813C312130FA900C19B17 /* MobileCoreServices.framework */,
 			);
 			name = Frameworks;
@@ -504,8 +504,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "glogger" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -616,7 +619,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: northNitch Studios, Inc";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 102;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -625,9 +628,7 @@
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-lxml2";
-				PREBINDING = NO;
-				PROVISIONING_PROFILE = "C0EDB059-2079-4FE2-BBE9-9741EE0F1DF4";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -649,8 +650,6 @@
 					"-DnnDEBUG_MODE",
 				);
 				PRODUCT_NAME = glogger;
-				PROVISIONING_PROFILE = "904C07E0-9862-4197-9645-0098D78AA5D6";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "904C07E0-9862-4197-9645-0098D78AA5D6";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Distribution;
@@ -670,7 +669,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DnnDEBUG_MODE";
 				OTHER_LDFLAGS = "-lxml2";
-				PREBINDING = NO;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
