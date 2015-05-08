@@ -30,6 +30,7 @@
 		423CE3431209C8FA0024586D /* record_end.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 423CE3411209C8FA0024586D /* record_end.aiff */; };
 		423CE35F1209C9820024586D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423CE35E1209C9820024586D /* CoreAudio.framework */; };
 		423CE3651209C99B0024586D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423CE3641209C99B0024586D /* AudioToolbox.framework */; };
+		4276AC87185E839E00E06408 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4276AC86185E839E00E06408 /* Default-568h@2x.png */; };
 		42775BCC1465D0FA004B5256 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42775BCB1465D0FA004B5256 /* libz.1.2.5.dylib */; };
 		427F4A9D1203AE6900153B28 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427F4A9C1203AE6900153B28 /* MessageUI.framework */; };
 		427F4BD41203D98800153B28 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 427F4BD31203D98800153B28 /* icon.png */; };
@@ -41,11 +42,6 @@
 		4281D2E312F8BA11003527AA /* nnDVBoolUISwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4281D2DE12F8BA11003527AA /* nnDVBoolUISwitch.m */; };
 		4281D2E412F8BA11003527AA /* nnDVStringUIText.m in Sources */ = {isa = PBXBuildFile; fileRef = 4281D2E012F8BA11003527AA /* nnDVStringUIText.m */; };
 		42A0DE7A12F9E9F600EDDCB3 /* nnDV.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A0DE7912F9E9F600EDDCB3 /* nnDV.m */; };
-		42AE81D912132E210052A86C /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE81CE12132E210052A86C /* SBJsonWriter.m */; };
-		42AE81DA12132E210052A86C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE81D012132E210052A86C /* SBJsonParser.m */; };
-		42AE81DB12132E210052A86C /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE81D212132E210052A86C /* SBJsonBase.m */; };
-		42AE81DC12132E210052A86C /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE81D412132E210052A86C /* NSString+SBJSON.m */; };
-		42AE81DD12132E210052A86C /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE81D612132E210052A86C /* NSObject+SBJSON.m */; };
 		42AE83AF1214928C0052A86C /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42AE83AD1214928C0052A86C /* SettingsViewController.xib */; };
 		42AE84B512159B1C0052A86C /* nnLoginSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE84B412159B1C0052A86C /* nnLoginSettingsViewController.m */; };
 		42AE84B812159B710052A86C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE84B712159B710052A86C /* SettingsViewController.m */; };
@@ -127,6 +123,7 @@
 		423CE3411209C8FA0024586D /* record_end.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = record_end.aiff; path = media/record_end.aiff; sourceTree = "<group>"; };
 		423CE35E1209C9820024586D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		423CE3641209C99B0024586D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4276AC86185E839E00E06408 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		42775BCB1465D0FA004B5256 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		427F4A9C1203AE6900153B28 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		427F4BD31203D98800153B28 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -145,17 +142,6 @@
 		4281D2E112F8BA11003527AA /* nnDVStringUIText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nnDVStringUIText.h; path = ../nnLib/nnDVStringUIText.h; sourceTree = "<group>"; };
 		42A0DE7512F9468A00EDDCB3 /* nnDV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nnDV.h; path = ../nnLib/nnDV.h; sourceTree = "<group>"; };
 		42A0DE7912F9E9F600EDDCB3 /* nnDV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = nnDV.m; path = ../nnLib/nnDV.m; sourceTree = "<group>"; };
-		42AE81CE12132E210052A86C /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = "../../thirdParty/json-framework/Classes/SBJsonWriter.m"; sourceTree = SOURCE_ROOT; };
-		42AE81CF12132E210052A86C /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = "../../thirdParty/json-framework/Classes/SBJsonWriter.h"; sourceTree = SOURCE_ROOT; };
-		42AE81D012132E210052A86C /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = "../../thirdParty/json-framework/Classes/SBJsonParser.m"; sourceTree = SOURCE_ROOT; };
-		42AE81D112132E210052A86C /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = "../../thirdParty/json-framework/Classes/SBJsonParser.h"; sourceTree = SOURCE_ROOT; };
-		42AE81D212132E210052A86C /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonBase.m; path = "../../thirdParty/json-framework/Classes/SBJsonBase.m"; sourceTree = SOURCE_ROOT; };
-		42AE81D312132E210052A86C /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonBase.h; path = "../../thirdParty/json-framework/Classes/SBJsonBase.h"; sourceTree = SOURCE_ROOT; };
-		42AE81D412132E210052A86C /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SBJSON.m"; path = "../../thirdParty/json-framework/Classes/NSString+SBJSON.m"; sourceTree = SOURCE_ROOT; };
-		42AE81D512132E210052A86C /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SBJSON.h"; path = "../../thirdParty/json-framework/Classes/NSString+SBJSON.h"; sourceTree = SOURCE_ROOT; };
-		42AE81D612132E210052A86C /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJSON.m"; path = "../../thirdParty/json-framework/Classes/NSObject+SBJSON.m"; sourceTree = SOURCE_ROOT; };
-		42AE81D712132E210052A86C /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJSON.h"; path = "../../thirdParty/json-framework/Classes/NSObject+SBJSON.h"; sourceTree = SOURCE_ROOT; };
-		42AE81D812132E210052A86C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = "../../thirdParty/json-framework/Classes/JSON.h"; sourceTree = SOURCE_ROOT; };
 		42AE83AD1214928C0052A86C /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = Classes/SettingsViewController.xib; sourceTree = "<group>"; };
 		42AE84B312159B1C0052A86C /* nnLoginSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = nnLoginSettingsViewController.h; path = ../nnLib/nnLoginSettingsViewController.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		42AE84B412159B1C0052A86C /* nnLoginSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = nnLoginSettingsViewController.m; path = ../nnLib/nnLoginSettingsViewController.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -287,8 +273,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				4276AC86185E839E00E06408 /* Default-568h@2x.png */,
 				42E12157129978FA00FD11F9 /* TODO.txt */,
-				42AE81CD12132DF90052A86C /* JSON */,
 				423813AF12130EA900C19B17 /* Reachability */,
 				4238139612130E6200C19B17 /* ASIHTTP */,
 				42F57F6511FF8FCD00D863E6 /* nnLib */,
@@ -404,24 +390,6 @@
 			name = media;
 			sourceTree = "<group>";
 		};
-		42AE81CD12132DF90052A86C /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				42AE81CE12132E210052A86C /* SBJsonWriter.m */,
-				42AE81CF12132E210052A86C /* SBJsonWriter.h */,
-				42AE81D012132E210052A86C /* SBJsonParser.m */,
-				42AE81D112132E210052A86C /* SBJsonParser.h */,
-				42AE81D212132E210052A86C /* SBJsonBase.m */,
-				42AE81D312132E210052A86C /* SBJsonBase.h */,
-				42AE81D412132E210052A86C /* NSString+SBJSON.m */,
-				42AE81D512132E210052A86C /* NSString+SBJSON.h */,
-				42AE81D612132E210052A86C /* NSObject+SBJSON.m */,
-				42AE81D712132E210052A86C /* NSObject+SBJSON.h */,
-				42AE81D812132E210052A86C /* JSON.h */,
-			);
-			name = JSON;
-			sourceTree = "<group>";
-		};
 		42F57F6511FF8FCD00D863E6 /* nnLib */ = {
 			isa = PBXGroup;
 			children = (
@@ -505,7 +473,12 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 274Q423LQL;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "glogger" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -537,6 +510,7 @@
 				42F584301200CEEA00D863E6 /* CustomTableCell.xib in Resources */,
 				42F9B07B120235C300381E71 /* elevation_off.png in Resources */,
 				42F9B07C120235C300381E71 /* elevation_on.png in Resources */,
+				4276AC87185E839E00E06408 /* Default-568h@2x.png in Resources */,
 				42F9B15412023B4600381E71 /* distance_off.png in Resources */,
 				42F9B15512023B4600381E71 /* distance_on.png in Resources */,
 				42F9B15612023B4600381E71 /* gradient_off.png in Resources */,
@@ -590,11 +564,6 @@
 				423813AB12130E8300C19B17 /* ASIDownloadCache.m in Sources */,
 				423813AC12130E8300C19B17 /* ASIAuthenticationDialog.m in Sources */,
 				423813B212130ECA00C19B17 /* Reachability.m in Sources */,
-				42AE81D912132E210052A86C /* SBJsonWriter.m in Sources */,
-				42AE81DA12132E210052A86C /* SBJsonParser.m in Sources */,
-				42AE81DB12132E210052A86C /* SBJsonBase.m in Sources */,
-				42AE81DC12132E210052A86C /* NSString+SBJSON.m in Sources */,
-				42AE81DD12132E210052A86C /* NSObject+SBJSON.m in Sources */,
 				42AE84B512159B1C0052A86C /* nnLoginSettingsViewController.m in Sources */,
 				42AE84B812159B710052A86C /* SettingsViewController.m in Sources */,
 				42F14709121D649C0039EDE0 /* nnHTTPService.m in Sources */,
@@ -614,10 +583,27 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		4276AC85185CCAB000E06408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "$(SRCROOT)/glogger-Info.plist";
+				PRODUCT_NAME = glogger;
+				PROVISIONING_PROFILE = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
 		427F4B641203D7EF00153B28 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -626,6 +612,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-lxml2";
 				PROVISIONING_PROFILE = "";
@@ -639,17 +626,21 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Brice Tebbs (XM2KZ66A66)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Brice Tebbs (XM2KZ66A66)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = glogger_Prefix.pch;
-				INFOPLIST_FILE = "glogger-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/glogger-Info.plist";
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"-DnnDEBUG_MODE",
 				);
 				PRODUCT_NAME = glogger;
+				PROVISIONING_PROFILE = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Distribution;
@@ -657,7 +648,6 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -666,7 +656,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DnnDEBUG_MODE";
 				OTHER_LDFLAGS = "-lxml2";
 				PROVISIONING_PROFILE = "";
@@ -683,6 +674,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				427F4B651203D7EF00153B28 /* Distribution */,
+				4276AC85185CCAB000E06408 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Distribution;
